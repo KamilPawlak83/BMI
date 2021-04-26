@@ -21,7 +21,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALCULATE YOUR BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc3-tF-0Di">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="555"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                         <color key="textColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -116,6 +116,7 @@
                         <outlet property="heightSlider" destination="sZU-Fj-hqy" id="OSI-nd-IWt"/>
                         <outlet property="weightLabel" destination="NR7-jY-kqt" id="HTI-J5-tjS"/>
                         <outlet property="weightSlider" destination="5rE-Le-pvI" id="BXK-fg-uVw"/>
+                        <segue destination="ESk-8Y-Re8" kind="presentation" identifier="goToResult" id="r7w-FT-ng7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,11 +128,61 @@
             <objects>
                 <viewController id="ESk-8Y-Re8" customClass="ResultViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1HU-cf-KnT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-6a-BFJ">
+                                <rect key="frame" x="20" y="757" width="374" height="51"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.92941176469999998" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="2si-qE-6fC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recalculateButtonPressed:" destination="ESk-8Y-Re8" eventType="touchUpInside" id="VFl-YD-yx5"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="phW-is-SwV">
+                                <rect key="frame" x="39.5" y="330.5" width="335" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-dD-isC">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <color key="textColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bmiLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Man-8i-DuZ">
+                                        <rect key="frame" x="0.0" y="47.5" width="335" height="95.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                        <color key="textColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92g-jL-7XQ">
+                                        <rect key="frame" x="0.0" y="151" width="335" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PRA-jF-2KD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="phW-is-SwV" firstAttribute="centerX" secondItem="1HU-cf-KnT" secondAttribute="centerX" id="CCl-hb-xmU"/>
+                            <constraint firstItem="PRA-jF-2KD" firstAttribute="bottom" secondItem="Evs-6a-BFJ" secondAttribute="bottom" id="jxW-Ks-wlg"/>
+                            <constraint firstItem="Evs-6a-BFJ" firstAttribute="leading" secondItem="PRA-jF-2KD" secondAttribute="leading" constant="20" id="mVX-aY-ALk"/>
+                            <constraint firstItem="phW-is-SwV" firstAttribute="centerY" secondItem="1HU-cf-KnT" secondAttribute="centerY" id="t4F-Ob-Bkr"/>
+                            <constraint firstItem="PRA-jF-2KD" firstAttribute="trailing" secondItem="Evs-6a-BFJ" secondAttribute="trailing" constant="20" id="wVw-ox-obh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="92g-jL-7XQ" id="MOR-A9-nO2"/>
+                        <outlet property="bmiLabel" destination="Man-8i-DuZ" id="IKA-Jr-t1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylX-4F-aWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
