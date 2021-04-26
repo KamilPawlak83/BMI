@@ -22,7 +22,7 @@ struct CalculatorBrain {
     }
     
     func getColor() -> UIColor {
-        let colorkp = bmi?.color ??  colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+        let colorkp = bmi?.color ??  #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
         return colorkp
     }
     
@@ -30,11 +30,11 @@ struct CalculatorBrain {
          let bmiValue = weight / (height * height)
         
         if bmiValue < 18.5 {
-            bmi = BMI(value: bmiValue, advice: "Eat more", color:  colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1))
+            bmi = BMI(value: bmiValue, advice: "Eat more", color:  #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1))
         } else if bmiValue < 24.9 {
-            bmi = BMI(value: bmiValue, advice: "Greate result", color:  colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))
+            bmi = BMI(value: bmiValue, advice: "Greate result", color: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))
         } else {
-            bmi = BMI(value: bmiValue, advice: "STOP eating", color:  colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1))
+            bmi = BMI(value: bmiValue, advice: "STOP eating", color:  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1))
         }
 
 
