@@ -34,8 +34,8 @@
                                                 <color key="textColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7C-Vn-mbq">
-                                                <rect key="frame" x="323.5" y="0.0" width="50.5" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.10 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7C-Vn-mbq">
+                                                <rect key="frame" x="326" y="0.0" width="48" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.22352941179999999" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                             <constraint firstAttribute="height" constant="21" id="RYe-iY-jBX"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="sZU-Fj-hqy">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.1000000000000001" minValue="0.0" maxValue="2.2000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="sZU-Fj-hqy">
                                         <rect key="frame" x="-2" y="596" width="378" height="61"/>
                                         <color key="tintColor" red="0.14117647059999999" green="0.63701496260000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -75,7 +75,7 @@
                                             <constraint firstAttribute="height" constant="21" id="MNH-Jq-whG"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="160" translatesAutoresizingMaskIntoConstraints="NO" id="5rE-Le-pvI">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="5rE-Le-pvI">
                                         <rect key="frame" x="-2" y="697" width="378" height="61"/>
                                         <color key="tintColor" red="0.14117647059999999" green="0.63701496260000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
