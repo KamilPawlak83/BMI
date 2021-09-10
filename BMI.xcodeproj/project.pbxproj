@@ -14,7 +14,7 @@
 		8E82D33C2637002800EBCC49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E82D33B2637002800EBCC49 /* Assets.xcassets */; };
 		8E82D33F2637002800EBCC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82D33D2637002800EBCC49 /* LaunchScreen.storyboard */; };
 		8E82D34B2637015100EBCC49 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82D34A2637015100EBCC49 /* ResultViewController.swift */; };
-		8E82D3502637018600EBCC49 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82D34F2637018600EBCC49 /* CalculatorBrain.swift */; };
+		8E82D3502637018600EBCC49 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82D34F2637018600EBCC49 /* Calculator.swift */; };
 		8E82D3552637019B00EBCC49 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82D3542637019B00EBCC49 /* BMI.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		8E82D33E2637002800EBCC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E82D3402637002800EBCC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E82D34A2637015100EBCC49 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		8E82D34F2637018600EBCC49 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		8E82D34F2637018600EBCC49 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		8E82D3542637019B00EBCC49 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,7 @@
 		8E82D3522637018B00EBCC49 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8E82D34F2637018600EBCC49 /* CalculatorBrain.swift */,
+				8E82D34F2637018600EBCC49 /* Calculator.swift */,
 				8E82D3542637019B00EBCC49 /* BMI.swift */,
 			);
 			path = Model;
@@ -173,7 +173,7 @@
 				8E82D3372637002600EBCC49 /* CalculateViewController.swift in Sources */,
 				8E82D3332637002600EBCC49 /* AppDelegate.swift in Sources */,
 				8E82D3352637002600EBCC49 /* SceneDelegate.swift in Sources */,
-				8E82D3502637018600EBCC49 /* CalculatorBrain.swift in Sources */,
+				8E82D3502637018600EBCC49 /* Calculator.swift in Sources */,
 				8E82D3552637019B00EBCC49 /* BMI.swift in Sources */,
 				8E82D34B2637015100EBCC49 /* ResultViewController.swift in Sources */,
 			);
