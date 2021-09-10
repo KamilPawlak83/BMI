@@ -87,7 +87,7 @@
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tye-Xo-2i0">
                                         <rect key="frame" x="0.0" y="762" width="374" height="51"/>
-                                        <color key="backgroundColor" red="0.14117647059999999" green="0.63701496260000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.63529411764705879" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="51" id="Xf9-Ea-hQs"/>
                                         </constraints>
@@ -117,7 +117,7 @@
                         <outlet property="heightSlider" destination="sZU-Fj-hqy" id="OSI-nd-IWt"/>
                         <outlet property="weightLabel" destination="NR7-jY-kqt" id="HTI-J5-tjS"/>
                         <outlet property="weightSlider" destination="5rE-Le-pvI" id="BXK-fg-uVw"/>
-                        <segue destination="ESk-8Y-Re8" kind="presentation" identifier="goToResult" id="r7w-FT-ng7"/>
+                        <segue destination="ESk-8Y-Re8" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="r7w-FT-ng7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -129,11 +129,11 @@
             <objects>
                 <viewController id="ESk-8Y-Re8" customClass="ResultViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1HU-cf-KnT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-6a-BFJ">
-                                <rect key="frame" x="20" y="752" width="374" height="51"/>
+                                <rect key="frame" x="20" y="806" width="374" height="51"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.92941176469999998" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="2si-qE-6fC"/>
@@ -147,7 +147,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="phW-is-SwV">
-                                <rect key="frame" x="39.5" y="330.5" width="335" height="181"/>
+                                <rect key="frame" x="39.5" y="357.5" width="335" height="181"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-dD-isC">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="39.5"/>
@@ -180,6 +180,7 @@
                             <constraint firstItem="PRA-jF-2KD" firstAttribute="trailing" secondItem="Evs-6a-BFJ" secondAttribute="trailing" constant="20" id="wVw-ox-obh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iFk-HJ-ne9"/>
                     <connections>
                         <outlet property="adviceLabel" destination="92g-jL-7XQ" id="MOR-A9-nO2"/>
                         <outlet property="bmiLabel" destination="Man-8i-DuZ" id="IKA-Jr-t1f"/>

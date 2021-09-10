@@ -53,7 +53,6 @@ class CalculateViewController: UIViewController {
         calculator.calculateBMI(height: height, weight: weight)
         
         self.performSegue(withIdentifier: "goToResult", sender: self)
-        print(height)
         // I save User's height because this value doesn't change very often
         let defaults = UserDefaults.standard
         defaults.set(height, forKey: "MyHeight")
