@@ -1,5 +1,11 @@
 # BMI - Body Mass Index App
 
+### UI
+
+![BMI Screens](https://user-images.githubusercontent.com/73897166/133266737-3afbce69-0ab5-4f88-a7a5-e6eb1c6f6b0b.png)
+
+
+
 ### App Description
 This app is a simple BMI calculator.
 There are two View Controllers for Calculate and Result
