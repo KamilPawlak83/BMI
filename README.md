@@ -18,7 +18,7 @@ We can have 7 diffrent results and background color depending on BMI:
 6. Obesity second degree
 7. Obesity third degree
 
-![BMI](https://user-images.githubusercontent.com/73897166/133264163-ba15267f-01e0-4df8-adb0-3dc23036f48a.png)
+![BMI](https://user-images.githubusercontent.com/73897166/133271578-3b0571ac-8f7a-4889-a198-08087c0afb0d.png)
 
 After first use app store data about our height (of curse we can still change it). 
 I used UserDefaults to save this info.
