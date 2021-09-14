@@ -5,7 +5,6 @@
 ![BMI Screens](https://user-images.githubusercontent.com/73897166/133266737-3afbce69-0ab5-4f88-a7a5-e6eb1c6f6b0b.png)
 
 
-
 ### App Description
 This app is a simple BMI calculator.
 There are two View Controllers for Calculate and Result
@@ -31,5 +30,8 @@ I used UserDefaults to save this info.
 * How to create: 
   * Structs with mutating func
   * Extension for UButton
-* and how important is to round values in proper way - to always have the same result
+* Auto Layout + Stack View
+* How to use Sliders
+* and how important is to round values in proper way - to always have the same result :)
+
 
