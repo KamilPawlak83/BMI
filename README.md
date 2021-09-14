@@ -23,7 +23,7 @@ I used UserDefaults to save this info.
 * How to transfer data between two screens (performSeque)
 * UserDefaults
 * How to create: 
-  *Structs with mutating func
-  *extension for UButton
+  * Structs with mutating func
+  * Extension for UButton
 * and how important is to round values in proper way - to always have the same result
 
