@@ -21,7 +21,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recalculateButton.applyDesigh()
+        recalculateButton.applyDesign()
 
         bmiLabel.text = bmiValueRVC
         adviceLabel.text = descriptionRVC

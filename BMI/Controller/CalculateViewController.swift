@@ -20,7 +20,7 @@ class CalculateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calculateButton.applyDesigh()
+        calculateButton.applyDesign()
         weightSlider.value = 100.0
         
         // only for first use height is equal to 1.10m in other cases height takes last chosen value
@@ -71,7 +71,7 @@ class CalculateViewController: UIViewController {
 }
 // this extension allowed me to change property of Buttons
 extension UIButton {
-   func applyDesigh() {
+   func applyDesign() {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 8
         self.layer.borderWidth = 1
