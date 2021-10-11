@@ -33,7 +33,6 @@ class CalculateViewController: UIViewController {
         } else {
             heightLabel.text = "\(savedHeight) m"
         }
-        
     }
 
     @IBAction func heightSliderChanged(_ sender: UISlider) {
@@ -41,7 +40,6 @@ class CalculateViewController: UIViewController {
         heightLabel.text = "\(height) m"
     }
  
-    
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         let weight = String(format: "%.0f", sender.value)
         weightLabel.text = "\(weight) Kg"
@@ -64,7 +62,6 @@ class CalculateViewController: UIViewController {
             destinationVC.bmiValueRVC = calculator.getBMIValue()
             destinationVC.descriptionRVC = calculator.getDescription()
             destinationVC.colorRVC = calculator.getColor()
-            
         }
     }
     

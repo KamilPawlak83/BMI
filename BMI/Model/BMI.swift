@@ -12,7 +12,6 @@ struct BMI {
     let value: Float
     let description: String
     let color: UIColor
-    
 }
 
 

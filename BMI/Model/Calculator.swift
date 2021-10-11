@@ -38,12 +38,7 @@ struct Calculator {
         case 30..<35: bmi = BMI(value: bmiValue, description: "Obesity first degree", color: #colorLiteral(red: 0.9764705896, green: 0.6717864163, blue: 0.2248409406, alpha: 1))
         case 35..<40:  bmi = BMI(value: bmiValue, description: "Obesity second degree", color:  #colorLiteral(red: 0.9764705896, green: 0.4860020824, blue: 0.179739344, alpha: 1))
         case 40... :  bmi = BMI(value: bmiValue, description: "Obesity third degree", color:  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1))
-            
         default: bmi = BMI(value: bmiValue, description: "Wrong Data", color:  #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
-        
-        
         }
-
     }
-   
 }
